@@ -102,7 +102,7 @@ export default function Home() {
     <>
       <Head>
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230D0D0D'/%3E%3Cg transform='translate(50,82)'%3E%3Ccircle cx='0' cy='0' r='8' fill='%23C9935A'/%3E%3Cline x1='-6.9' y1='-2.5' x2='-28' y2='-55' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='-5' y1='-6.2' x2='-18' y2='-62' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='-2.5' y1='-7.8' x2='-8' y2='-65' stroke='%23C9935A' stroke-width='2.2' stroke-linecap='round'/%3E%3Cline x1='0' y1='-8' x2='0' y2='-68' stroke='%23C9935A' stroke-width='2.4' stroke-linecap='round'/%3E%3Cline x1='2.5' y1='-7.8' x2='8' y2='-65' stroke='%23C9935A' stroke-width='2.2' stroke-linecap='round'/%3E%3Cline x1='5' y1='-6.2' x2='18' y2='-62' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='6.9' y1='-2.5' x2='28' y2='-55' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E" />
-        <title>Body Tan â Premium Tanning and Wellness in Brooklyn</title>
+        <title>Body Tan — Premium Tanning and Wellness in Brooklyn</title>
         <meta name="description" content="Premium tanning beds, spray tanning, massage chair, and wellness services in Brooklyn, NY since 1989." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -155,7 +155,7 @@ export default function Home() {
         </div>
         <div className="fade-up" style={{ textAlign: 'center', position: 'relative', zIndex: 2, padding: '0 5vw' }}>
           <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}><SunburstLogo size={90} /></div>
-          <div className="cg" style={{ fontSize: '0.68rem', letterSpacing: '0.45em', color: '#C9935A', textTransform: 'uppercase', marginBottom: '1.8rem' }}>Est. 1989 â Brooklyn, New York</div>
+          <div className="cg" style={{ fontSize: '0.68rem', letterSpacing: '0.45em', color: '#C9935A', textTransform: 'uppercase', marginBottom: '1.8rem' }}>Est. 1989 — Brooklyn, New York</div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: '0.1em', marginBottom: '1.5rem' }}>
             <span className="viola" style={{ fontSize: 'clamp(5rem, 12vw, 10rem)', fontWeight: 'normal', lineHeight: 0.9, letterSpacing: '0.05em', color: '#F8F3EE' }}>BODY</span>
             <span className="viola" style={{ fontSize: 'clamp(5rem, 12vw, 10rem)', fontWeight: 'normal', lineHeight: 0.9, letterSpacing: '0.08em', color: '#C9935A' }}>TAN</span>
@@ -180,13 +180,13 @@ export default function Home() {
       <div style={{ background: '#C9935A', padding: '2.2rem 5vw', display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1rem', textAlign: 'center' }}>
         {[{ num: '35+', label: 'Years of Excellence' }, { num: '14', label: 'Premium Tanning Beds' }, { num: '1000+', label: 'Happy Clients' }].map(({ num, label }) => (
           <div key={label} style={{ borderRight: label !== 'Happy Clients' ? '1px solid rgba(13,13,13,0.2)' : 'none', paddingRight: '1rem' }}>
-            <div className="viola" style={{ fontSize: '2.8rem', color: '#0D0D0D', lineHeight: 1 }}>{num}</div>
+            <div className="cg" style={{ fontSize: '2.8rem', color: '#0D0D0D', lineHeight: 1, fontWeight: '400' }}>{num}</div>
             <div className="cg" style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#0D0D0D', opacity: 0.65, marginTop: '0.3rem', fontWeight: 400 }}>{label}</div>
           </div>
         ))}
       </div>
 
-      {/* SERVICES â only 3: Tanning Beds, Massage Chair, Spray Tanning */}
+      {/* SERVICES — only 3: Tanning Beds, Massage Chair, Spray Tanning */}
       <section id="services" style={{ background: '#1a1a1a', padding: '100px 5vw', textAlign: 'center' }}>
         <div style={{ width: '60px', height: '1px', background: 'linear-gradient(90deg, transparent, #C9935A, transparent)', margin: '0 auto 1.2rem' }}></div>
         <p className="cg" style={{ fontSize: '0.63rem', letterSpacing: '0.38em', textTransform: 'uppercase', color: '#C9935A', marginBottom: '0.7rem' }}>What We Offer</p>
@@ -249,7 +249,7 @@ export default function Home() {
             <div style={{ width: '55px', height: '1px', background: 'linear-gradient(90deg, #C9935A, transparent)', marginBottom: '1.4rem' }}></div>
             <p className="cg" style={{ fontSize: '0.63rem', letterSpacing: '0.38em', textTransform: 'uppercase', color: '#C9935A', marginBottom: '0.9rem' }}>Our Story</p>
             <h2 className="viola" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.2rem)', color: '#F8F3EE', marginBottom: '1.8rem', lineHeight: 1.15 }}>
-              Brooklyn&apos;s Premier<br /><em>Wellness Sanctuary</em>
+              Brooklyn&apos;s Premier<br /><em>Tanning and Wellness Center</em>
             </h2>
             <p className="cg" style={{ color: 'rgba(248,243,238,0.6)', lineHeight: 2.1, marginBottom: '1.4rem', fontSize: '0.88rem' }}>
               Since 1989, Body Tan has been Brooklyn&apos;s trusted destination for premium tanning and holistic wellness. What began as a boutique tanning studio has evolved into a full-service wellness center.
@@ -310,7 +310,7 @@ export default function Home() {
           <h2 className="viola" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#F8F3EE', marginBottom: '3.5rem' }}>Contact Us</h2>
           {submitted ? (
             <div style={{ background: 'rgba(201,147,90,0.08)', border: '1px solid rgba(201,147,90,0.4)', padding: '2.5rem', color: '#C9935A', fontFamily: 'Viola, serif', fontSize: '1.3rem', letterSpacing: '0.05em', fontStyle: 'italic' }}>
-              Thank you â we will be in touch soon.
+              Thank you — we will be in touch soon.
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
