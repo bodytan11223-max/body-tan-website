@@ -286,11 +286,11 @@ export default function Home() {
           <h2 className="viola" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: '#F8F3EE', marginBottom: '1rem', letterSpacing: '0.04em' }}>Ready to Glow?</h2>
           <p className="cg" style={{ color: 'rgba(248,243,238,0.55)', marginBottom: '3rem', fontSize: '0.95rem', lineHeight: 1.9 }}>Call us or walk in. We would love to help you find your perfect session.</p>
           <div style={{ display: 'flex', gap: '1.2rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '3.5rem' }}>
-            <a href="tel:+17180000000" className="btn-gold cg" style={{ background: 'linear-gradient(135deg, #C9935A, #A67840)', color: '#0D0D0D', padding: '1.1rem 3rem', fontSize: '0.72rem', letterSpacing: '0.22em', textTransform: 'uppercase', fontWeight: 700, display: 'inline-block' }}>Call to Book</a>
+            <a href="tel:+17183752167" className="btn-gold cg" style={{ background: 'linear-gradient(135deg, #C9935A, #A67840)', color: '#0D0D0D', padding: '1.1rem 3rem', fontSize: '0.72rem', letterSpacing: '0.22em', textTransform: 'uppercase', fontWeight: 700, display: 'inline-block' }}>Call to Book</a>
             <a href="#contact" className="btn-outline cg" style={{ border: '1px solid #C9935A', color: '#C9935A', padding: '1.1rem 3rem', fontSize: '0.72rem', letterSpacing: '0.22em', textTransform: 'uppercase', fontWeight: 400, display: 'inline-block', background: 'transparent' }}>Send a Message</a>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '0', border: '1px solid rgba(201,147,90,0.18)', textAlign: 'center' }}>
-            {[{ emoji: '🕐', label: 'Hours', lines: ['Mon–Sat: 9am–8pm', 'Sun: 10am–6pm'] }, { emoji: '📍', label: 'Location', lines: ['Brooklyn, NY', 'Call for address'] }, { emoji: '📞', label: 'Phone', lines: ['(718) 000-0000', 'Walk-ins Welcome'] }].map(({ emoji, label, lines }, idx) => (
+            {[{ emoji: '🕐', label: 'Hours', lines: ['Mon–Thu: 10am–8pm', 'Fri–Sun: 10am–9pm'] }, { emoji: '📍', label: 'Location', lines: ['721 Avenue U', 'Brooklyn, NY 11229'] }, { emoji: '📞', label: 'Phone', lines: ['718-375-2167', 'Walk-ins Welcome'] }].map(({ emoji, label, lines }, idx) => (
               <div key={label} style={{ padding: '2rem 1.5rem', borderRight: idx < 2 ? '1px solid rgba(201,147,90,0.15)' : 'none' }}>
                 <div style={{ fontSize: '1.5rem', marginBottom: '0.6rem' }}>{emoji}</div>
                 <div className="cg" style={{ fontSize: '0.58rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9935A', marginBottom: '0.6rem' }}>{label}</div>
