@@ -180,7 +180,7 @@ export default function Home() {
       <div style={{ background: '#C9935A', padding: '2.2rem 5vw', display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1rem', textAlign: 'center' }}>
         {[{ num: '35+', label: 'Years of Excellence' }, { num: '14', label: 'Premium Tanning Beds' }, { num: '1000+', label: 'Happy Clients' }].map(({ num, label }) => (
           <div key={label} style={{ borderRight: label !== 'Happy Clients' ? '1px solid rgba(13,13,13,0.2)' : 'none', paddingRight: '1rem' }}>
-            <div className="cg" style={{ fontSize: '2.8rem', color: '#0D0D0D', lineHeight: 1, fontWeight: '400' }}>{num}</div>
+            <div style={{ fontSize: '2.8rem', color: '#0D0D0D', lineHeight: 1, fontWeight: '400', fontFamily: 'Arial, Helvetica, sans-serif' }}>{num}</div>
             <div className="cg" style={{ fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#0D0D0D', opacity: 0.65, marginTop: '0.3rem', fontWeight: 400 }}>{label}</div>
           </div>
         ))}
@@ -291,9 +291,13 @@ export default function Home() {
             <a href="#contact" className="btn-outline cg" style={{ border: '1px solid #C9935A', color: '#C9935A', padding: '1.1rem 3rem', fontSize: '0.72rem', letterSpacing: '0.22em', textTransform: 'uppercase', fontWeight: 400, display: 'inline-block', background: 'transparent' }}>Send a Message</a>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '0', border: '1px solid rgba(201,147,90,0.18)', textAlign: 'center' }}>
-            {[{ emoji: 'ð', label: 'Hours', lines: ['MonâThu: 10amâ8pm', 'FriâSun: 10amâ9pm'] }, { emoji: 'ð', label: 'Location', lines: ['721 Avenue U', 'Brooklyn, NY 11229'] }, { emoji: 'ð', label: 'Phone', lines: ['718-375-2167', 'Walk-ins Welcome'] }].map(({ emoji, label, lines }, idx) => (
+            {[{ icon: 'clock', label: 'Hours', lines: ['Mon-Thu: 10am-8pm', 'Fri-Sun: 10am-9pm'] }, { icon: 'pin', label: 'Location', lines: ['721 Avenue U', 'Brooklyn, NY 11229'] }, { icon: 'phone', label: 'Phone', lines: ['718-375-2167', 'Walk-ins Welcome'] }].map(({ icon, label, lines }, idx) => (
               <div key={label} style={{ padding: '2rem 1.5rem', borderRight: idx < 2 ? '1px solid rgba(201,147,90,0.15)' : 'none' }}>
-                <div style={{ fontSize: '1.5rem', marginBottom: '0.6rem' }}>{emoji}</div>
+                <div style={{ marginBottom: '0.8rem', display: 'flex', justifyContent: 'center' }}>
+                  {icon === 'clock' && <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9935A" strokeWidth="1.5" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>}
+                  {icon === 'pin' && <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9935A" strokeWidth="1.5" strokeLinecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>}
+                  {icon === 'phone' && <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9935A" strokeWidth="1.5" strokeLinecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.4 19.79 19.79 0 0 1 1.62 4.84 2 2 0 0 1 3.59 2.63h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.18a16 16 0 0 0 6.06 6.06l.52-.52a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>}
+                </div>
                 <div className="cg" style={{ fontSize: '0.58rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9935A', marginBottom: '0.6rem' }}>{label}</div>
                 {lines.map(line => <div key={line} className="cg" style={{ fontSize: '0.78rem', color: 'rgba(248,243,238,0.6)', lineHeight: 1.7 }}>{line}</div>)}
               </div>
