@@ -235,7 +235,7 @@ export default function Home() {
           ].map(({ svg, title, desc }) => (
             <div key={title} className="service-card" style={{ background: '#0D0D0D', padding: '3rem 2rem', textAlign: 'center', cursor: 'default' }}>
               <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>{svg}</div>
-              <h3 className="viola" style={{ fontSize: '1.5rem', color: '#F8F3EE', marginBottom: '1rem', letterSpacing: '0.04em' }}>{title}</h3>
+              <h3 className="viola" style={{ fontSize: '1.5rem', color: '#F8F3EE', marginBottom: '1rem', letterSpacing: '0.04em' , fontWeight: 'normal'}}>{title}</h3>
               <p className="cg" style={{ fontSize: '0.83rem', color: 'rgba(248,243,238,0.55)', lineHeight: 1.9, letterSpacing: '0.02em' }}>{desc}</p>
             </div>
           ))}
