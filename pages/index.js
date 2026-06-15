@@ -101,6 +101,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230D0D0D'/%3E%3Cg transform='translate(50,82)'%3E%3Ccircle cx='0' cy='0' r='8' fill='%23C9935A'/%3E%3Cline x1='-6.9' y1='-2.5' x2='-28' y2='-55' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='-5' y1='-6.2' x2='-18' y2='-62' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='-2.5' y1='-7.8' x2='-8' y2='-65' stroke='%23C9935A' stroke-width='2.2' stroke-linecap='round'/%3E%3Cline x1='0' y1='-8' x2='0' y2='-68' stroke='%23C9935A' stroke-width='2.4' stroke-linecap='round'/%3E%3Cline x1='2.5' y1='-7.8' x2='8' y2='-65' stroke='%23C9935A' stroke-width='2.2' stroke-linecap='round'/%3E%3Cline x1='5' y1='-6.2' x2='18' y2='-62' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='6.9' y1='-2.5' x2='28' y2='-55' stroke='%23C9935A' stroke-width='2' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E" />
         <title>Body Tan â Premium Tanning and Wellness in Brooklyn</title>
         <meta name="description" content="Premium tanning beds, spray tanning, massage chair, and wellness services in Brooklyn, NY since 1989." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -119,11 +120,11 @@ export default function Home() {
         padding: '1.1rem 5vw', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         transition: 'all 0.4s ease'
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <SunburstLogo size={42} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <SunburstLogo size={52} />
           <div>
-            <div className="viola" style={{ fontSize: '1.3rem', fontWeight: 'normal', letterSpacing: '0.18em', color: '#F8F3EE' }}>BODY TAN</div>
-            <div style={{ fontSize: '0.52rem', letterSpacing: '0.25em', color: '#C9935A', textTransform: 'uppercase', fontFamily: "'Century Gothic', Arial, sans-serif" }}>And Wellness Center</div>
+            <div className="viola" style={{ fontSize: '1.55rem', fontWeight: 'normal', letterSpacing: '0.18em', color: '#F8F3EE', lineHeight: 1.1 }}>BODY TAN</div>
+            <div style={{ fontSize: '0.62rem', letterSpacing: '0.3em', color: '#C9935A', textTransform: 'uppercase', fontFamily: "'Century Gothic', Arial, sans-serif", marginTop: '2px' }}>And Wellness Center</div>
           </div>
         </div>
         <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
