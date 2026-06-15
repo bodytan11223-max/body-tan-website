@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Body Tan — Premium Tanning and Wellness in Brooklyn</title>
+        <title>Body Tan â Premium Tanning and Wellness in Brooklyn</title>
         <meta name="description" content="Premium tanning beds, spray tanning, massage chair, and wellness services in Brooklyn, NY since 1989." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -154,10 +154,10 @@ export default function Home() {
         </div>
         <div className="fade-up" style={{ textAlign: 'center', position: 'relative', zIndex: 2, padding: '0 5vw' }}>
           <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}><SunburstLogo size={90} /></div>
-          <div className="cg" style={{ fontSize: '0.68rem', letterSpacing: '0.45em', color: '#C9935A', textTransform: 'uppercase', marginBottom: '1.8rem' }}>Est. 1989 — Brooklyn, New York</div>
-          <div>
-            <div className="viola" style={{ fontSize: 'clamp(5rem, 12vw, 10rem)', fontWeight: 'normal', lineHeight: 0.9, letterSpacing: '0.05em', color: '#F8F3EE' }}>BODY</div>
-            <div className="viola" style={{ fontSize: 'clamp(5rem, 12vw, 10rem)', fontWeight: 'normal', lineHeight: 0.9, letterSpacing: '0.08em', color: '#C9935A', marginBottom: '1.5rem' }}>TAN</div>
+          <div className="cg" style={{ fontSize: '0.68rem', letterSpacing: '0.45em', color: '#C9935A', textTransform: 'uppercase', marginBottom: '1.8rem' }}>Est. 1989 â Brooklyn, New York</div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: '0.1em', marginBottom: '1.5rem' }}>
+            <span className="viola" style={{ fontSize: 'clamp(5rem, 12vw, 10rem)', fontWeight: 'normal', lineHeight: 0.9, letterSpacing: '0.05em', color: '#F8F3EE' }}>BODY</span>
+            <span className="viola" style={{ fontSize: 'clamp(5rem, 12vw, 10rem)', fontWeight: 'normal', lineHeight: 0.9, letterSpacing: '0.08em', color: '#C9935A' }}>TAN</span>
           </div>
           <div className="viola" style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.7rem)', fontStyle: 'italic', color: '#F8F3EE', opacity: 0.75, marginBottom: '3rem', letterSpacing: '0.04em' }}>
             Premium Tanning and Wellness Center
@@ -185,7 +185,7 @@ export default function Home() {
         ))}
       </div>
 
-      {/* SERVICES — only 3: Tanning Beds, Massage Chair, Spray Tanning */}
+      {/* SERVICES â only 3: Tanning Beds, Massage Chair, Spray Tanning */}
       <section id="services" style={{ background: '#1a1a1a', padding: '100px 5vw', textAlign: 'center' }}>
         <div style={{ width: '60px', height: '1px', background: 'linear-gradient(90deg, transparent, #C9935A, transparent)', margin: '0 auto 1.2rem' }}></div>
         <p className="cg" style={{ fontSize: '0.63rem', letterSpacing: '0.38em', textTransform: 'uppercase', color: '#C9935A', marginBottom: '0.7rem' }}>What We Offer</p>
@@ -290,7 +290,7 @@ export default function Home() {
             <a href="#contact" className="btn-outline cg" style={{ border: '1px solid #C9935A', color: '#C9935A', padding: '1.1rem 3rem', fontSize: '0.72rem', letterSpacing: '0.22em', textTransform: 'uppercase', fontWeight: 400, display: 'inline-block', background: 'transparent' }}>Send a Message</a>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '0', border: '1px solid rgba(201,147,90,0.18)', textAlign: 'center' }}>
-            {[{ emoji: '🕐', label: 'Hours', lines: ['Mon–Thu: 10am–8pm', 'Fri–Sun: 10am–9pm'] }, { emoji: '📍', label: 'Location', lines: ['721 Avenue U', 'Brooklyn, NY 11229'] }, { emoji: '📞', label: 'Phone', lines: ['718-375-2167', 'Walk-ins Welcome'] }].map(({ emoji, label, lines }, idx) => (
+            {[{ emoji: 'ð', label: 'Hours', lines: ['MonâThu: 10amâ8pm', 'FriâSun: 10amâ9pm'] }, { emoji: 'ð', label: 'Location', lines: ['721 Avenue U', 'Brooklyn, NY 11229'] }, { emoji: 'ð', label: 'Phone', lines: ['718-375-2167', 'Walk-ins Welcome'] }].map(({ emoji, label, lines }, idx) => (
               <div key={label} style={{ padding: '2rem 1.5rem', borderRight: idx < 2 ? '1px solid rgba(201,147,90,0.15)' : 'none' }}>
                 <div style={{ fontSize: '1.5rem', marginBottom: '0.6rem' }}>{emoji}</div>
                 <div className="cg" style={{ fontSize: '0.58rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C9935A', marginBottom: '0.6rem' }}>{label}</div>
@@ -309,7 +309,7 @@ export default function Home() {
           <h2 className="viola" style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#F8F3EE', marginBottom: '3.5rem' }}>Contact Us</h2>
           {submitted ? (
             <div style={{ background: 'rgba(201,147,90,0.08)', border: '1px solid rgba(201,147,90,0.4)', padding: '2.5rem', color: '#C9935A', fontFamily: 'Viola, serif', fontSize: '1.3rem', letterSpacing: '0.05em', fontStyle: 'italic' }}>
-              Thank you — we will be in touch soon.
+              Thank you â we will be in touch soon.
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
