@@ -256,13 +256,13 @@ export default function Home() {
 
       {/* Footer */}
       <footer style={{ background: '#1a1a1a', padding: '3rem 5vw', textAlign: 'center' }}>
-        <img src="/logoo.png" alt="Body Tan" style={{ height: '80px', width: 'auto', marginBottom: '1.5rem', filter: 'invert(1) brightness(1.2)' }} />
+        <img src="/logoo.png" alt="Body Tan" style={{ height: '80px', width: 'auto', marginBottom: '1.5rem' }} />
         <div style={{ fontSize: '0.65rem', letterSpacing: '0.18em', color: 'rgba(248,243,238,0.5)', textTransform: 'uppercase' }}>
           &copy; 1989&ndash;2026 Body Tan And Wellness Center &middot; Brooklyn, NY
         </div>
         <div style={{ marginTop: '1rem' }}>
-          <a href="https://www.instagram.com/bodytan_11223/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: '#C9935A', margin: '0 1rem' }}>Instagram</a>
-          <a href="https://www.facebook.com/people/Body-Tan/61585704763989/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: '#C9935A', margin: '0 1rem' }}>Facebook</a>
+          <a href="https://www.instagram.com/bodytan_11223/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: '#A67840', margin: '0 1rem' }}>Instagram</a>
+          <a href="https://www.facebook.com/people/Body-Tan/61585704763989/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: '#A67840', margin: '0 1rem' }}>Facebook</a>
         </div>
       </footer>
     </>
