@@ -255,9 +255,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer style={{ background: '#1a1a1a', padding: '3rem 5vw', textAlign: 'center' }}>
+      <footer style={{ background: '#F8F3EE', padding: '3rem 5vw', textAlign: 'center', borderTop: '1px solid rgba(201,147,90,0.2)' }}>
         <img src="/logoo.png" alt="Body Tan" style={{ height: '80px', width: 'auto', marginBottom: '1.5rem' }} />
-        <div style={{ fontSize: '0.65rem', letterSpacing: '0.18em', color: 'rgba(248,243,238,0.5)', textTransform: 'uppercase' }}>
+        <div style={{ fontSize: '0.65rem', letterSpacing: '0.18em', color: 'rgba(26,26,26,0.5)', textTransform: 'uppercase' }}>
           &copy; 1989&ndash;2026 Body Tan And Wellness Center &middot; Brooklyn, NY
         </div>
         <div style={{ marginTop: '1rem' }}>
