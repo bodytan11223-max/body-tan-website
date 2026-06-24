@@ -263,6 +263,7 @@ export default function Home() {
         <div style={{ marginTop: '1rem' }}>
           <a href="https://www.instagram.com/bodytan_11223/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: '#A67840', margin: '0 1rem' }}>Instagram</a>
           <a href="https://www.facebook.com/people/Body-Tan/61585704763989/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: '#A67840', margin: '0 1rem' }}>Facebook</a>
+                  <a href="/health-safety" style={{ fontSize: '0.7rem', letterSpacing: '0.15em', color: '#A67840', margin: '0 1rem' }}>Health &amp; Safety</a>
         </div>
       </footer>
     </>
