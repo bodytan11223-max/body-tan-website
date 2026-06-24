@@ -86,6 +86,7 @@ export default function Home() {
         <meta name="description" content="Premium tanning beds, spray tanning, massage chair, and wellness services in Brooklyn, NY since 1989." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{ __html: globalStyles }} />
+          <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
       {/* Mobile menu overlay */}
