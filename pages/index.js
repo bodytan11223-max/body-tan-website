@@ -172,12 +172,12 @@ export default function Home() {
         <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: '#1a1a1a', marginBottom: '4rem', letterSpacing: '0.04em', fontWeight: 400 }}>Our Services</h2>
         <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem', maxWidth: '1000px', margin: '0 auto' }}>
           {[
-            { title: 'Premium Tanning Beds', desc: '14 state-of-the-art beds for the perfect golden glow. Custom sessions tailored for all skin types.' },
-            { title: 'Massage Chair', desc: 'Unwind in our premium massage chair. A relaxing, rejuvenating experience after every tanning session.' },
-            { title: 'Spray Tanning', desc: 'Flawless, streak-free spray tans for a natural golden glow without the UV. Quick, customizable results.' }
-          ].map(({ title, desc }) => (
+            { emoji: '\u2600\uFE0F', title: 'Premium Tanning Beds', desc: '14 state-of-the-art beds for the perfect golden glow. Custom sessions tailored for all skin types.' },
+            { emoji: '💆', title: 'Massage Chair', desc: 'Unwind in our premium massage chair. A relaxing, rejuvenating experience after every tanning session.' },
+            { emoji: '✨', title: 'Spray Tanning', desc: 'Flawless, streak-free spray tans for a natural golden glow without the UV. Quick, customizable results.' }
+          ].map(({ emoji, title, desc }) => (
             <div key={title} className="service-card" style={{ background: '#F8F3EE', padding: '3rem 2rem', border: '1px solid rgba(201,147,90,0.15)', textAlign: 'center' }}>
-              <h3 style={{ fontSize: '1.5rem', color: '#C9935A', marginBottom: '1rem', letterSpacing: '0.04em', fontWeight: 400 }}>{title}</h3>
+              <div style={{ fontSize: '2rem', marginBottom: '0.8rem' }}>{emoji}</div><h3 style={{ fontSize: '1.5rem', color: '#C9935A', marginBottom: '1rem', letterSpacing: '0.04em', fontWeight: 400 }}>{title}</h3>
               <p style={{ color: '#666', fontSize: '0.88rem', lineHeight: 1.9 }}>{desc}</p>
             </div>
           ))}
