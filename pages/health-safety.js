@@ -214,6 +214,7 @@ export default function HealthSafety() {
         <title>Health & Safety Information | Body Tan and Wellness</title>
         <meta name="description" content="NYC DOH compliant health and safety information for indoor tanning at Body Tan and Wellness." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+              <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
       {/* Navigation */}
